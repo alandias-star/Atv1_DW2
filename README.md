@@ -13,5 +13,5 @@
 ---
 
 ### 3. Técnicas de Desenvolvimento
-* **Design Responsivo (Mobile-First):** Layout adaptável com 3 breakpoints via *Media Queries* (Mobile, Tablet e Desktop).
+* **Design Responsivo :** Layout adaptável com 3 breakpoints via *Media Queries* (Mobile, Tablet e Desktop).
 * **Código Limpo e Manutenível:** Separação rígida de responsabilidades entre marcação (HTML) e estilo (CSS).
