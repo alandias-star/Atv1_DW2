@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Paleta Temática Japão */
+  --cor-primaria: #bc002d;
+  --cor-secundaria: #1e293b;
+  --cor-fundo: #f8fafc;
+  --cor-cartao: #ffffff;
+  --cor-texto: #334155;
+  --cor-destaque: #d97706;
+  --fonte-principal: "Poppins", sans-serif;
+  --fonte-titulos: "Noto Sans JP", sans-serif;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+/* 
+   SELETORES SIMPLES  
+   */
+
+#topo {
+  background-color: var(--cor-secundaria);
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  position: relative;
+}
+
+.secao-conteudo {
+  background-color: var(--cor-cartao);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* 
+   SELETORES COMPOSTOS
+   */
+nav[aria-label="Navegação Principal"] {
+  background-color: var(--cor-primaria);
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+main > .secao-conteudo {
+  border-left: 5px solid var(--cor-primaria);
+}
+
+h2 + p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #64748b;
+}
+
+/* 
+   5. PSEUDO-CLASSES
+   */
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffffff;
+  color: var(--cor-primaria);
+}
+
+.lista-cronograma li:first-child,
+.lista-cardapio li:first-child {
+  font-weight: 700;
+  color: var(--cor-primaria);
+}
+
+.lista-cronograma li:nth-child(even),
+.lista-cardapio li:nth-child(even) {
+  background-color: #f1f5f9;
+}
+
+.lista-cronograma li,
+.lista-cardapio li {
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  margin-bottom: 0.3rem;
+}
+
+/* 
+   HIERARQUIA DE TÍTULOS E ESTILIZAÇÃO
+   */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fonte-titulos);
+  color: var(--cor-secundaria);
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #ffffff;
+}
+h2 {
+  font-size: 1.6rem;
+  color: var(--cor-primaria);
+}
+h3 {
+  font-size: 1.3rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+/* 
+   LAYOUT COM FLEXBOX E CSS GRID
+   */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.barra-lateral {
+  background-color: var(--cor-cartao);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  height: fit-content;
+}
+
+.lista-links {
+  list-style: none;
+  margin-top: 0.8rem;
+}
+
+.lista-links a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  display: block;
+  padding: 0.3rem 0;
+}
+
+.lista-links a:hover {
+  text-decoration: underline;
+}
+
+.galeria-figure {
+  margin: 1.5rem 0;
+  text-align: center;
+  background-color: var(--cor-fundo);
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.img-responsiva {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.media-box {
+  background-color: var(--cor-fundo);
+  padding: 1rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+  border: 1px solid #e2e8f0;
+}
+
+audio,
+video {
+  width: 100%;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+}
+
+.rodape-principal {
+  background-color: var(--cor-secundaria);
+  color: #94a3b8;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 3rem;
+}
+
+.rodape-principal strong {
+  color: #f1f5f9;
+}
+
+/* 
+   LAYOUT RESPONSIVO (3 BREAKPOINTS - MEDIA QUERIES)
+   */
+
+/* Breakpoint 1: Versão Mobile / Pequenas Telas (Padrão do código base) */
+
+/* Breakpoint 2: Tablet / Telas Médias  */
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .secao-conteudo {
+    padding: 2rem;
+  }
+
+  #video {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+/* Breakpoint 3: Desktop / Telas Grandes  */
+@media screen and (min-width: 992px) {
+  .container {
+    grid-template-columns: 3fr 1fr;
+  }
+
+  #topo {
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
