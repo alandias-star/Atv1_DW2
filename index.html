@@ -12,8 +12,8 @@
       content="Culinária Japonesa, Gastronomia Japonesa, Oficinas de Culinária, Degustações, Palestras, Apresentações Culturais, Sushi, Ramen, Cultura Japonesa"
     />
     <title>Evento de Culinária - A Semana da Cultura Japonesa</title>
-
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header id="topo">
@@ -26,13 +26,11 @@
 
     <nav aria-label="Navegação Principal" class="nav-principal">
       <ul>
-        <li><a href="#apresentacao">Apresentação do evento</a></li>
-        <li><a href="#cronograma">Cronograma das atividades</a></li>
-        <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#imagens">Galeria de imagens</a></li>
-        <li>
-          <a href="#video_trilhasonora">Vídeo e trilha sonora do evento</a>
-        </li>
+        <li><a href="index.html">Apresentação do evento</a></li>
+        <li><a href="cronograma.html">Cronograma das atividades</a></li>
+        <li><a href="cardapio.html">Cardápio</a></li>
+        <li><a href="galeria.html">Galeria de imagens</a></li>
+        <li><a href="midia.html">Vídeo e trilha sonora</a></li>
       </ul>
     </nav>
 
@@ -75,174 +73,30 @@
           </article>
         </section>
 
-        <section id="cronograma" class="secao-conteudo">
-          <h2>Cronograma das Atividades</h2>
-          <p>Confira a programação principal ao longo dos dias do festival:</p>
-
+        <section class="secao-conteudo">
+          <h2>Por que participar?</h2>
           <article>
-            <h3>Sexta-Feira: Abertura e Tradição</h3>
-            <ul class="lista-cronograma">
+            <h3>Experiência Cultural Imersiva</h3>
+            <p>
+              Além da gastronomia, você terá contato direto com a caligrafia
+              japonesa (Shodō), dobraduras (Origami) e vestimentas tradicionais
+              (Yukata).
+            </p>
+            <h3>Depoimentos de Edições Anteriores</h3>
+            <ul class="lista-cardapio">
               <li>
-                <strong>18:00</strong> - Cerimônia de Abertura com Apresentação
-                de Taikô (Tambores Japoneses)
+                <strong>"Uma viagem incrível sem sair de São Paulo!"</strong> –
+                Maria S.
               </li>
               <li>
-                <strong>19:30</strong> - Palestra:
-                <em>História do Washoku e sua Importância Mundial</em>
-              </li>
-              <li>
-                <strong>21:00</strong> - Degustação Guiada de Sakes Tradicionais
-              </li>
-            </ul>
-
-            <h3>Sábado: Oficinas Práticas</h3>
-            <ul class="lista-cronograma">
-              <li>
-                <strong>10:00</strong> - Oficina: Arte do Sushi Clássico (Nigiri
-                e Hosomaki)
-              </li>
-              <li>
-                <strong>14:00</strong> - Masterclass: Segredos do Caldo de Ramen
-                (Miso e Shoyu)
-              </li>
-              <li>
-                <strong>17:00</strong> - Workshop de Cerimônia do Chá (Chanoyu)
-              </li>
-            </ul>
-
-            <h3>Domingo: Encerramento Gastronômico</h3>
-            <ul class="lista-cronograma">
-              <li><strong>11:00</strong> - Competição de Pratos Autênticos</li>
-              <li>
-                <strong>15:00</strong> - Show de Cortes Precisos de Peixe Fresco
-              </li>
-              <li>
-                <strong>18:00</strong> - Encerramento com Danças Folclóricas e
-                Degustação Geral
+                <strong
+                  >"Os workshops de lámen mudaram minha forma de
+                  cozinhar."</strong
+                >
+                – Carlos H.
               </li>
             </ul>
           </article>
-        </section>
-
-        <section id="cardapio" class="secao-conteudo">
-          <h2>Cardápio do Evento</h2>
-          <p>
-            Confira algumas das iguarias que serão servidas na nossa praça de
-            alimentação e nas sessões de degustação:
-          </p>
-
-          <article>
-            <h3>Entradas e Acompanhamentos</h3>
-            <ul class="lista-cardapio">
-              <li>
-                <strong>Gyoza:</strong> Pastéis japoneses recheados com carne
-                suína e legumes grelhados.
-              </li>
-              <li>
-                <strong>Edamame:</strong> Grãos de soja verdes cozidos no vapor
-                com sal marinho.
-              </li>
-              <li>
-                <strong>Sunomono:</strong> Salada refrescante de pepino agridoce
-                com gergelim.
-              </li>
-            </ul>
-
-            <h3>Pratos Principais</h3>
-            <ul class="lista-cardapio">
-              <li>
-                <strong>Sashimi Combo:</strong> Fatias selecionadas de salmão,
-                atum e peixe branco.
-              </li>
-              <li>
-                <strong>Tonkotsu Ramen:</strong> Macarrão em caldo denso de
-                porco com ovo cozido macio e chashu.
-              </li>
-              <li>
-                <strong>Chicken Katsu Curry:</strong> Empanado crocante de
-                frango com molho curry tradicional sobre arroz.
-              </li>
-            </ul>
-
-            <h3>Sobremesas Tradicionais</h3>
-            <ul class="lista-cardapio">
-              <li>
-                <strong>Mochi de Matcha:</strong> Bolinho de arroz glutinoso com
-                recheio de chá verde.
-              </li>
-              <li>
-                <strong>Dorayaki:</strong> Panquecas recheadas com pasta doce de
-                feijão azuki.
-              </li>
-            </ul>
-          </article>
-        </section>
-
-        <section id="imagens" class="secao-conteudo">
-          <h2>Galeria de Imagens</h2>
-
-          <figure class="galeria-figure">
-            <img
-              src="/img/sushi.jpg"
-              alt="Combinado variado de sushi e sashimi"
-              class="img-responsiva"
-            />
-            <figcaption>
-              Figura 1: Prato de sushi e sashimi servido durante a oficina de
-              culinária japonesa.
-            </figcaption>
-          </figure>
-
-          <figure class="galeria-figure">
-            <svg
-              width="150"
-              height="150"
-              viewBox="0 0 100 100"
-              aria-label="Emblema comemorativo da Semana da Cultura Japonesa com o Sol Nascente vermelho"
-            >
-              <title>Emblema da Semana da Cultura Japonesa</title>
-              <circle
-                cx="50"
-                cy="50"
-                r="45"
-                fill="#f8fafc"
-                stroke="#bc002d"
-                stroke-width="4"
-              />
-              <circle cx="50" cy="50" r="28" fill="#bc002d" />
-              <path
-                d="M 20 75 Q 50 60 80 75 L 80 80 Q 50 65 20 80 Z"
-                fill="#1e293b"
-              />
-            </svg>
-            <figcaption>
-              Figura 2: Emblema comemorativo oficial do evento.
-            </figcaption>
-          </figure>
-        </section>
-
-        <section id="video_trilhasonora" class="secao-conteudo">
-          <h2>Vídeo de Divulgação e Trilha Sonora</h2>
-          <p>
-            Acompanhe a prévia do evento e sinta a atmosfera da cultura japonesa
-            com nossas mídias exclusivas.
-          </p>
-
-          <div class="media-box">
-            <h3>Trilha Sonora do Evento</h3>
-            <p>Ouça uma amostra de música tradicional tocada no evento:</p>
-            <audio controls preload="metadata">
-              <source src="/media/trilha_sonora.mp3" type="audio/mpeg" />
-            </audio>
-          </div>
-
-          <div class="media-box">
-            <h3>Vídeo Promocional</h3>
-
-            <video controls>
-              <source src="/media/video.mp4" type="video/mp4" />
-            </video>
-          </div>
         </section>
       </main>
 
@@ -254,9 +108,9 @@
         <hr />
         <h3>Links Úteis</h3>
         <ul class="lista-links">
-          <li><a href="#apresentacao">Sobre o Evento</a></li>
-          <li><a href="#cronograma">Programação</a></li>
-          <li><a href="#cardapio">Opções Gastronômicas</a></li>
+          <li><a href="index.html">Sobre o Evento</a></li>
+          <li><a href="cronograma.html">Programação</a></li>
+          <li><a href="cardapio.html">Opções Gastronômicas</a></li>
         </ul>
       </aside>
     </div>
@@ -271,7 +125,7 @@
       </p>
       <p>
         <strong>Contato:</strong> contato@semanaculturajaponesa.com.br | Tel:
-        (11) 99999-9999
+        (11) 0000-0000
       </p>
     </footer>
   </body>
