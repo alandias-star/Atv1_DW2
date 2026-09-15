@@ -165,4 +165,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     rodape.appendChild(btnTopo);
   }
+    // Simulação de busca de vagas disponíveis 
+
+function buscarVagasSimuladas() {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(120), 1500); 
+  });
+}
+
+async function atualizarAvisoVagas() {
+  const barraLateral = document.getElementById("recursos");
+  if (!barraLateral) return;
+
+ 
+  const aviso = document.createElement("p");
+  aviso.innerHTML = "<strong>Vagas Oficina:</strong> <em>Carregando...</em>";
+  barraLateral.appendChild(aviso);
+  
+  const vagas = await buscarVagasSimuladas();
+
+    aviso.innerHTML = `<strong>Vagas Oficina:</strong> Restam <span style="color: var(--cor-primaria); font-weight: bold;">${vagas}</span> vagas!`;
+}
+
+atualizarAvisoVagas();
 });
